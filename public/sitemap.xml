@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home -->
+  <url>
+    <loc>https://www.ogelo-toy.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ogelo-toy.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ogelo-toy.com/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ogelo-toy.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ogelo-toy.com/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ogelo-toy.com/"/>
+  </url>
+
+  <!-- Shop / Products -->
+  <url>
+    <loc>https://www.ogelo-toy.com/products</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ogelo-toy.com/products"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ogelo-toy.com/products"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ogelo-toy.com/products"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ogelo-toy.com/products"/>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://www.ogelo-toy.com/blog</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ogelo-toy.com/blog"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ogelo-toy.com/blog"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ogelo-toy.com/blog"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ogelo-toy.com/blog"/>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://www.ogelo-toy.com/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ogelo-toy.com/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ogelo-toy.com/about"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ogelo-toy.com/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ogelo-toy.com/about"/>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://www.ogelo-toy.com/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ogelo-toy.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ogelo-toy.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ogelo-toy.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ogelo-toy.com/contact"/>
+  </url>
+
+  <!-- FAQ -->
+  <url>
+    <loc>https://www.ogelo-toy.com/faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ogelo-toy.com/faq"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ogelo-toy.com/faq"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ogelo-toy.com/faq"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ogelo-toy.com/faq"/>
+  </url>
+
+  <!-- Shipping -->
+  <url>
+    <loc>https://www.ogelo-toy.com/shipping</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ogelo-toy.com/shipping"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ogelo-toy.com/shipping"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.ogelo-toy.com/shipping"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ogelo-toy.com/shipping"/>
+  </url>
+
+  <!-- Privacy -->
+  <url>
+    <loc>https://www.ogelo-toy.com/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Terms -->
+  <url>
+    <loc>https://www.ogelo-toy.com/terms</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
