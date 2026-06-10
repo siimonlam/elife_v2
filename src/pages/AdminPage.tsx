@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation, Link, Navigate } from 'react-router-dom';
-import { LayoutDashboard, Package, ShoppingBag, BookOpen, MessageSquare, Plus, Edit2, Trash2, Eye, EyeOff, TrendingUp, Users, DollarSign } from 'lucide-react';
+import { LayoutDashboard, Package, ShoppingBag, BookOpen, MessageSquare, Plus, CreditCard as Edit2, Trash2, Eye, EyeOff, TrendingUp, Users, DollarSign } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 import type { Product, Order, BlogPost, Category } from '../types';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../i18n/LanguageContext';
 import { Button } from '../components/ui/Button';
 import { PageLoader } from '../components/ui/LoadingSpinner';
+import AdminAccessDenied from '../components/ui/AdminAccessDenied';
 import { useSEO } from '../hooks/useSEO';
 
 type AdminTab = 'dashboard' | 'products' | 'orders' | 'blog' | 'messages';
 
 export default function AdminPage() {
   const { t, lang } = useLanguage();
-  const { user, profile, loading: authLoading } = useAuth();
+  const { user, profile, profileLoaded, loading: authLoading } = useAuth();
   const location = useLocation();
   const [tab, setTab] = useState<AdminTab>('dashboard');
   const [products, setProducts] = useState<Product[]>([]);
@@ -49,10 +50,11 @@ export default function AdminPage() {
     load().catch(() => setLoading(false));
   }, [profile, authLoading]);
 
-  if (authLoading || loading) return <PageLoader />;
-  if (user && profile === null) return <PageLoader />;
+  if (authLoading) return <PageLoader />;
   if (!user) return <Navigate to="/login" state={{ from: location.pathname }} replace />;
-  if (!profile?.is_admin) return <Navigate to="/" replace />;
+  if (!profileLoaded) return <PageLoader />;
+  if (!profile?.is_admin) return <AdminAccessDenied />;
+  if (loading) return <PageLoader />;
 
   const totalRevenue = orders.reduce((s, o) => s + o.total, 0);
 
